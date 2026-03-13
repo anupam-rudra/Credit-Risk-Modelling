@@ -1,11 +1,11 @@
-Credit Risk Scorecard Model using Lending Club Loan Data
-Project Overview
+# Credit Risk Scorecard Model using Lending Club Loan Data
+##Project Overview
 
 This project builds a credit risk scorecard model to estimate the Probability of Default (PD) for borrowers using the Lending Club loan dataset.
 
 The objective is to replicate a bank-style credit risk modelling pipeline used in financial institutions for loan underwriting and credit scoring.
 
-The workflow follows an industry-standard methodology:
+###The workflow follows an industry-standard methodology:
 
 Data cleaning and preprocessing
 
@@ -31,11 +31,11 @@ Population Stability Index (PSI) monitoring
 
 The final output is a credit score and risk band classification for each borrower.
 
-Dataset
+##Dataset
 
 The project uses the LendingClub Loan Dataset, a widely used dataset in credit risk modelling research.
 
-Dataset characteristics:
+##Dataset characteristics:
 
 Peer-to-peer lending data
 
@@ -54,7 +54,7 @@ Default	1
 
 The target represents whether the borrower defaulted on the loan.
 
-Project Workflow
+##Project Workflow
 1. Data Preprocessing
 
 Steps performed:
