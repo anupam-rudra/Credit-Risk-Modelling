@@ -3,7 +3,7 @@
 ## Overview
 
 This document describes the key variables used in the credit risk modelling project built using the Lending Club loan dataset.
-
+## Also Refer LCDataDictionary.xlsx
 The variables represent different aspects of a borrower's financial profile, credit behaviour, and loan characteristics.
 
 For clarity, the variables are grouped into the following categories:
