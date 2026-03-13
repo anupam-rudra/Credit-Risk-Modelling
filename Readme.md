@@ -166,10 +166,11 @@ Model Performance
 
 Evaluation metrics:
 
-Metric	Description
-AUC	Area Under ROC Curve
-Gini	2*AUC - 1
-KS	Kolmogorov–Smirnov statistic
+| Metric | Description |
+|------|-------------|
+| AUC | Area Under ROC Curve |
+| Gini | 2 × AUC − 1 |
+| KS | Kolmogorov–Smirnov statistic |
 
 ROC curve was used to evaluate discriminatory power of the model.
 
@@ -179,10 +180,13 @@ The model probabilities were converted to a credit score.
 
 Scorecard parameters:
 
-Parameter	Value
-Base Score	600
-Base Odds	50
-PDO (Points to Double Odds)	50
+| Parameter | Value |
+|----------|-------|
+| Base Score | 600 |
+| Base Odds | 50 |
+| PDO (Points to Double Odds) | 50 |
+| Factor | PDO / ln(2) |
+| Offset | Base Score − Factor × ln(Base Odds) |
 
 Score formula:
 
