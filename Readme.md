@@ -60,7 +60,7 @@ Default	1
 The target represents whether the borrower defaulted on the loan.
 
 ## Project Workflow
-1. Data Preprocessing
+### Data Preprocessing
 
 Steps performed:
 
@@ -74,7 +74,7 @@ Remove features with >70% missing values
 
 Train / validation split (70 / 30 stratified)
 
-2. Missing Value Treatment
+### Missing Value Treatment
 
 Handling strategy:
 
@@ -86,7 +86,7 @@ Categorical variables
 
 Imputed with "Missing" category
 
-3. Feature Selection
+### Feature Selection
 
 Initial feature filtering was performed using Random Forest feature importance.
 
@@ -102,7 +102,7 @@ Minimum leaf samples = 50
 
 Top 30 most important variables were selected.
 
-4. Multicollinearity Removal
+### Multicollinearity Removal
 
 Highly correlated numerical variables were removed using:
 
@@ -112,7 +112,7 @@ Correlation threshold:
 
 This helps improve model stability and interpretability.
 
-5. Monotonic Binning
+### Monotonic Binning
 
 Numerical variables were binned using quantile binning with monotonic constraint.
 
@@ -122,7 +122,7 @@ Monotonic relationship between variable and default rate
 
 Stability of credit scorecards
 
-6. Weight of Evidence (WOE)
+### Weight of Evidence (WOE)
 
 All selected variables were transformed using WOE encoding.
 
@@ -134,7 +134,7 @@ Creates monotonic relationship with default probability
 
 Improves logistic regression interpretability
 
-7. Information Value (IV) Feature Selection
+### Information Value (IV) Feature Selection
 
 Variables were selected based on Information Value.
 Selection rule:IV >= 0.03
@@ -146,7 +146,7 @@ Selection rule:IV >= 0.03
 | >0.3| Very strong |
 
 
-8. Logistic Regression PD Model
+### Logistic Regression PD Model
 
 Final Probability of Default model built using:
 
@@ -162,9 +162,9 @@ Regulatory friendly
 
 Statistically insignificant variables were removed after the first model run.
 
-Model Performance
+### Model Performance
 
-Evaluation metrics:
+### Evaluation metrics:
 
 | Metric | Description |
 |------|-------------|
@@ -178,7 +178,7 @@ Credit Score Scaling
 
 The model probabilities were converted to a credit score.
 
-Scorecard parameters:
+### Scorecard parameters:
 
 | Parameter | Value |
 |----------|-------|
@@ -194,11 +194,11 @@ Score = Offset - Factor * log(odds)
 
 This produces a traditional credit bureau style scorecard.
 
-Risk Band Segmentation
+###Risk Band Segmentation
 
 
 
-Borrowers were segmented into **risk bands based on Probability of Default (PD)**.
+Borrowers were segmented into risk bands based on Probability of Default (PD)
 
 | PD Range | Risk Band |
 |---------|----------|
@@ -209,9 +209,9 @@ Borrowers were segmented into **risk bands based on Probability of Default (PD)*
 | > 20% | Very High |
 Default rate increases monotonically across risk bands.
 
-Model Monitoring
+### Model Monitoring
 
-**Population Stability Index (PSI)** was used to check distribution stability between the **development** and **validation** samples.
+Population Stability Index (PSI) was used to check distribution stability between the development and validation samples.
 
 ### PSI Interpretation
 
@@ -221,7 +221,7 @@ Model Monitoring
 | 0.1 – 0.25 | Moderate Shift |
 | > 0.25 | Significant Shift |
 
-Visualizations
+### Visualizations
 
 The project includes several visual diagnostics:
 
