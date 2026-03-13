@@ -211,14 +211,16 @@ Default rate increases monotonically across risk bands.
 
 Model Monitoring
 
-Population Stability Index (PSI) was used to check distribution stability between development and validation samples.
+**Population Stability Index (PSI)** was used to check distribution stability between the **development** and **validation** samples.
 
-PSI interpretation:
+### PSI Interpretation
 
-PSI	Interpretation
-<0.1	Stable
-0.1 – 0.25	Moderate shift
->0.25	Significant shift
+| PSI Value | Interpretation |
+|-----------|---------------|
+| < 0.1 | Stable |
+| 0.1 – 0.25 | Moderate Shift |
+| > 0.25 | Significant Shift |
+
 Visualizations
 
 The project includes several visual diagnostics:
