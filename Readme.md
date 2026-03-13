@@ -1,4 +1,9 @@
 # Credit Risk Scorecard Model using Lending Club Loan Data
+
+# Dataset Link
+https://www.kaggle.com/datasets/adarshsng/lending-club-loan-data-csv
+
+
 ##Project Overview
 
 This project builds a credit risk scorecard model to estimate the Probability of Default (PD) for borrowers using the Lending Club loan dataset.
