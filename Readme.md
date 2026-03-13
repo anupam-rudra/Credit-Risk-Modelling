@@ -196,15 +196,17 @@ This produces a traditional credit bureau style scorecard.
 
 Risk Band Segmentation
 
-Borrowers were segmented into risk bands based on PD.
 
-PD Range	Risk Band
-0 – 2%	Very Low
-2 – 5%	Low
-5 – 10%	Medium
-10 – 20%	High
->20%	Very High
 
+Borrowers were segmented into **risk bands based on Probability of Default (PD)**.
+
+| PD Range | Risk Band |
+|---------|----------|
+| 0 – 2% | Very Low |
+| 2 – 5% | Low |
+| 5 – 10% | Medium |
+| 10 – 20% | High |
+| > 20% | Very High |
 Default rate increases monotonically across risk bands.
 
 Model Monitoring
